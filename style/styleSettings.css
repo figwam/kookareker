@@ -1,0 +1,44 @@
+#settings{
+    min-height: 200px;
+    width: 360px;
+    margin: 15px auto;
+    padding:15px;
+}
+#settings::after{
+    content: "";
+    display: table;
+    clear: both;
+    margin: 0;
+}
+#fieldName{
+    width:150px;
+    margin: 0;
+    float:left;
+    font-weight: bold;
+}
+#fieldName>p{
+    background-color: inherit;
+    height:22px;
+}
+p#nameDate{
+    height:23px;
+}
+
+#field{
+    float:left;
+    background-color: inherit;
+    width:210px;
+}
+input{
+    width: 200px;
+}
+#button{
+    clear: both;
+    background-color: inherit;
+    margin: 0;
+    line-height:30px;
+    width:360px;
+    text-align: center;
+    font-weight: bold;
+}
+

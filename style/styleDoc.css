@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i&subset=cyrillic,cyrillic-ext');
+*{
+    font-family: "Roboto";
+}
+body{
+}
+#wrap{
+    width: 1170px;
+    margin: auto;
+    padding:0;
+}
+.errors{
+    font-size: 12px;
+    color: red;
+    display: inline-block;
+    width:500px;
+    margin: 15px auto;
+}
+input{
+    color:black!important;
+}

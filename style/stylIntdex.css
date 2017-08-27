@@ -1,0 +1,67 @@
+#profile{
+    padding:15px;
+    box-sizing: border-box;
+}
+#form{
+    height:300px;
+    width: 400px;
+    margin:15px auto;
+    text-align: center;
+    background-color: rgba(255,255,255,0.03);
+
+}
+#form>ul>li{
+    display: block;
+    width:280px;
+    line-height:40px;
+    /*background: green;*/
+    /*border:1px solid red;*/
+    padding:0;
+}
+
+
+#form>ul>li>label{
+    display:inline-block;
+    min-width:60px;
+    height:40px;
+}
+#form>ul>li:first-child>label{
+    width:280px;
+}
+#form input{
+    height:20px;
+    background-color: rgba(255,255,255,0.1);
+    color:white;
+    border:none;
+}
+input:focus{
+    border:none;
+}
+
+#form>ul>li>p{
+    display:inline-block;
+    width:23px;
+    height:23px;
+    /*background: url("str.png") no-repeat;*/
+    /*background-size: auto 23px;*/
+    /*background-position: right;*/
+    margin:0 5px;
+    position: relative;
+    top:7px;
+}
+
+.true{
+    background: url("img_2/str.png") no-repeat;
+    background-size: auto 23px;
+    background-position: left;
+}
+.false{
+    background: url("img_2/str.png") no-repeat;
+    background-size: auto 23px;
+    background-position: right;
+}
+.loading{
+    background: url("img_2/25.gif") no-repeat;
+    background-size: 100% auto;
+
+}

@@ -1,0 +1,61 @@
+#profile{
+    width:1170px;
+    min-height:375px;
+    margin-bottom: 15px;
+    background-color: rgba(0,0,0,0.1);
+}
+#profile #left{
+    min-height:375px;
+    width:300px;
+    float:left;
+}
+#profile #left #image{
+    width:270px;
+    height:270px;
+    background: url("img/rooster.png");
+    background-size: 100% auto;
+    margin:11px;
+    border:2px solid black;
+}
+#profile #left input{
+
+}
+#profile #right{
+    width:605px;
+    height:375px;
+    float:right;
+}
+#profile #right #login{
+    width:590px;
+    height:50px;
+    margin:15px 15px 15px 0;
+    padding:15px;
+    box-sizing: border-box;
+    background-color: rgba(0,0,0,0.1);
+
+}
+#fieldName{
+    float:left;
+    width:150px;
+    min-height:215px;
+    text-align: right;
+}
+#userInfo{
+    margin-right: 15px;
+    margin-bottom: 15px;
+    float:right;
+    height:215px;
+    width:425px;
+}
+#fieldName>p
+{
+}
+#profile #right>#userInfo>p {
+    height: 20px;
+    width: 425px;
+}
+#profile #right #pageInfo{
+    clear:both;
+    height:50px;
+    margin:0 15px 15px 0;
+}

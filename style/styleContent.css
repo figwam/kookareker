@@ -1,0 +1,50 @@
+#content{
+    clear: both;
+    margin:15px auto;
+    width:600px;
+    min-height:200px;
+    padding:15px;
+    box-sizing: border-box;
+    background-color: rgba(0,0,0,0.1);
+}
+#content .button{
+    line-height: 30px;
+    width:250px;
+    margin:0 auto;
+}
+
+#textCrow{
+    display: block;
+    margin:0 auto;
+    width:500px;
+    height: 100px;
+}
+
+/*#content div:first-child div:first-child{*/
+    /*text-align: center;*/
+/*}*/
+#post>div{
+    margin-top:-1px;
+    border: 1px solid black;
+}
+.login, .date{
+    margin-top:15px;
+}
+.login{
+    float:left;
+    padding:0 15px;
+}
+.date{
+    width:300px;
+    float:left;
+}
+.key:after{
+    content:'';
+    display: table;
+    clear:both;
+}
+.post{
+    padding: 15px;
+}
+
+

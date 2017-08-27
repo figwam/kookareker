@@ -1,0 +1,15 @@
+header{
+    width:1170px;
+    height:70px;
+    background: url("img/header.png");
+    background-color: rgba(0,0,0,0.1);
+    margin:15px 0;
+    clear:both;
+    padding:0;
+}
+#logout{
+    float:right;
+    margin-top:30px;
+    width:100px;
+    height:30px;
+}

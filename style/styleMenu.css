@@ -1,0 +1,44 @@
+#menu{
+    font-weight: bold;
+    width:230px;
+    height:375px;
+    float:left;
+    background-color: rgba(60,100,100,0.1);
+    margin-right: 15px;
+}
+
+#menu>ul{
+    padding:0;
+    margin:0;
+}
+#menu>ul>li{
+    display:block;
+    line-height:40px;
+    width:230px;
+    text-align: center;
+    color:black;
+}
+
+
+#menu a{
+    display: block;
+    text-decoration: none;
+    width:230px;
+    height:40px;
+    border-bottom: 2px solid rgba(0,0,0,1);
+    color:rgba(0,0,0,1);
+}
+#menu>ul>li:first-child{
+    border-bottom:2px solid rgba(0,0,0,1);
+}
+/*#menu>ul>li>a:visited{*/
+    /*color:rgba(0,0,0,1);*/
+/*}*/
+/*#menu>ul>li>a:hover{*/
+    /*color:rgba(255,255,255,0.99);*/
+    /*background-color: rgba(0,0,0,0.5);*/
+/*}*/
+/*#menu>ul>li>a:active{*/
+    /*color:white;*/
+    /*background-color: rgba(255, 0, 0,0.6);*/
+/*}*/

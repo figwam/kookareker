@@ -1,0 +1,49 @@
+#profile{
+    padding:15px;
+    box-sizing: border-box;
+}
+#form{
+    height:300px;
+    width: 550px;
+    margin:15px auto;
+    text-align: center;
+    background-color: rgba(255,255,255,0.03);
+
+}
+#form ul{
+    display: inline-block;
+}
+#form ul li{
+    display: block;
+    line-height:40px;
+    /*background: green;*/
+    /*border:1px solid red;*/
+    padding:0;
+}
+#form input{
+    padding:0;
+    margin: 0;
+}
+#form #logSpr, #form #passFirstSpr, #form #passSecondSpr, #form #emailSpr{
+    position:relative;
+    top:6px;
+    margin: 0;
+    display: inline-block;
+    width:24px;
+    height: 24px;
+}
+.true{
+    background: url("img_2/str.png") no-repeat;
+    background-size: auto 23px;
+    background-position: left;
+}
+.false{
+    background: url("img_2/str.png") no-repeat;
+    background-size: auto 23px;
+    background-position: right;
+}
+.loading{
+    background: url("../style/img_2/25.gif") no-repeat;
+    background-size: 100% auto;
+
+}

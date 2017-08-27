@@ -1,0 +1,27 @@
+.button{
+    width: 100%;
+    line-height:40px;
+    text-align: center;
+    margin:0;
+}
+.button>a{
+    display:inline-block;
+    text-decoration: none;
+    width:inherit;
+    line-height:inherit;
+    font-weight: bold;
+    color:black;
+}
+.button>a:visited{
+    color:black !important;
+}
+.button>a:hover{
+    background: rgba(32,36,38,0.8)!important;
+    color:white !important;
+    -webkit-transition: 0.35s ease-out;
+    -moz-transition: 0.35s ease-out;
+    -ms-transition: 0.35s ease-out;
+    -o-transition: 0.35s ease-out;
+    transition: 0.35s ease-out;
+    border-color: white !important;
+}

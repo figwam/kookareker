@@ -1,0 +1,92 @@
+#sort{
+    min-height:375px;
+    width:230px;
+    background-color: rgba(0,0,0,0.1);
+    float:right;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+#sort select{
+    display: inline-block;
+}
+#sort>p{
+    display: inline-block;
+}
+#sort p{
+    margin:0;
+    margin-top:15px;
+}
+#sort label{
+    margin-right: 15px;
+}
+#sampling{
+    width:680px;
+    float:left;
+}
+#sampling a {
+    display: block;
+    height: 30px;
+    width: 680px;
+    /*background-color: rgba(0,0,255,0.3);*/
+    border-bottom: 2px solid rgba(0,0,0,0.1);
+}
+.strut:after{
+    display:table;
+    content: "";
+    clear: both;
+}
+#sampling p{
+    margin:0;
+    padding:0;
+    line-height:30px;
+    display:inline-block;
+    text-align: center;
+    font-weight: bold;
+}
+#name, #date, #location, #№{
+    background-color: rgba(0,0,0,0.1);
+}
+#sampling a:visited{
+    color: black;
+}
+#sampling #name{
+    width:200px;
+}
+#sampling .name{
+    width:200px;
+}
+#sampling #date{
+    width:200px;
+}
+#sampling .date{
+    width:200px;
+}
+#sampling #location{
+    width:230px;
+}
+#sampling .location{
+    width:230px;
+}
+#№{
+    width:50px;
+}
+.№{
+    width:50px;
+}
+
+#butList{
+    margin-left:245px;
+    margin-top:15px;
+    width:680px;
+    clear:both;
+    height:30px;
+    text-align: center;
+}
+#add{
+    display: block;
+    width:300px;
+    line-height:30px;
+    background-color: darkgrey;
+    margin:0 auto;
+    text-decoration: none;
+}

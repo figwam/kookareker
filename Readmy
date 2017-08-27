@@ -1,0 +1,41 @@
+База данных состоит из двух таблиц:
+1) new_table
+                    CREATE TABLE
+                    IF NOT EXISTS `new_table`(
+                    `login` VARCHAR(45) NOT NULL,
+                    `password` VARCHAR(100) NOT NULL,
+                    `email` VARCHAR(45) NOT NULL,
+                    `name` VARCHAR(45),
+                    `gender` VARCHAR (45),
+                    `date` DATE,
+                    `location` VARCHAR (45),
+                    `subscribers` MEDIUMTEXT,
+                    `subscriptions` MEDIUMTEXT,
+                    PRIMARY KEY (`email`, `login`))
+                    ENGINE = InnoDB
+                    DEFAULT CHARACTER SET = utf8
+     subscribers -  пользователя
+     subscriptions - подписки пользователя
+
+2) postusers
+                CREATE TABLE
+                IF NOT EXISTS `postusers`(
+                `id` INT(11) NOT NULL AUTO_INCREMENT,
+                `login` VARCHAR (45) NOT NULL,
+                `date` INT(11) NOT NULL,
+                `post` VARCHAR(45) NOT NULL,
+                PRIMARY KEY(`id`,`login`,`date`))
+                ENGINE = InnoDB
+                DEFAULT CHARACTER SET = utf8
+post - сообщение
+date - дата добавления сообщения
+
+Можно воспользоваться функцией "createBD" (function/function.php), которая создаст таблицы и сгенерирует случайных пользователей.
+Весь "backend" расположен в файле server.
+
+Организация фалов:
+    index.php - страница авторизации
+    signup/signup.php - страница авторизации
+    settings/profileSettings.php - настройки профиля
+    my_page/my_page.php - главная страница(-ы)
+    function - библиотека функций
