@@ -1,4 +1,6 @@
-//Создаёт профиль пользователя
+/*
+ Создаёт профиль пользователя , где data - информация о пользователе
+ */
 function myPageActive(data)
 {
     $("#profile").empty();
@@ -34,44 +36,43 @@ function myPageActive(data)
     else
     {
 
-        //проверка подписки
-        // ajaxInquiry('../server.php', {checkSub: true}, function(data){
-        //     if(data)
-        //     {
-        //         $("#left").append(
-        //             "<div class='GoToSettings button'>" +
-        //             "<a href='#' id='Subscribe'>Отписаться</a>" +
-        //             "</div>");
-        //         //Навешиваем событие на кнопку 'Subscribe'
-        //         $("#Subscribe").on('click', function(){
-        //             ajaxInquiry('../server.php', {subscribe:false}, function(data){
-        //                 alert(data + ' подписка успешно отменена');
-        //             });
-        //         });
-        //     }
-        //     else
-        //     {
-        //         $("#left").append(
-        //             "<div class='GoToSettings button'>" +
-        //             "<a href='#' id='Subscribe'>Подписаться</a>" +
-        //             "</div>");
-        //         //Навешиваем событие на кнопку 'Subscribe'
-        //         $("#Subscribe").on('click', function(){
-        //             ajaxInquiry('../server.php', {subscribe:true}, function(data){
-        //                 if(data)
-        //                     alert(data + ' подписка успешно оформлена');
-        //
-        //                 else
-        //                     alert(data + ' увы, подписаться не получилось');
-        //             });
-        //         });
-        //     }
-        // });
+        // проверка подписки
+        ajaxInquiry('../server.php', {checkSub: true}, function(data){
+            if(data)
+            {
+                $("#left").append(
+                    "<div class='GoToSettings button'>" +
+                    "<a href='#' id='Subscribe'>Отписаться</a>" +
+                    "</div>");
+                //Навешиваем событие на кнопку 'Subscribe'
+                $("#Subscribe").on('click', function(){
+                    ajaxInquiry('../server.php', {subscribe:false}, function(data){
+                        alert(data + ' подписка успешно отменена');
+                    });
+                });
+            }
+            else
+            {
+                $("#left").append(
+                    "<div class='GoToSettings button'>" +
+                    "<a href='#' id='Subscribe'>Подписаться</a>" +
+                    "</div>");
+                //Навешиваем событие на кнопку 'Subscribe'
+                $("#Subscribe").on('click', function(){
+                    ajaxInquiry('../server.php', {subscribe:true}, function(data){
+                        if(data)
+                            alert(data + ' подписка успешно оформлена');
+
+                        else
+                            alert(data + ' увы, подписаться не получилось');
+                    });
+                });
+            }
+        });
     }
-    alert('qwe');
     createContent();
 }
-//============== создание блока 'content' и наполнение оного содержимым ==============
+//создание блока 'content' и наполнение оного содержимым
 function createContent(){
     //Поле для ввода нового кукарека
     $("#profile").after("<div id='content'>" +
@@ -138,7 +139,12 @@ function date (time)
     dat.setTime(time);
     return ('0' + dat.getDate()).slice(-2) + '.' + ('0' + (dat.getMonth() + 1)).slice(-2) + '.' + dat.getFullYear();
 }
-//============ Сокращённая форма "ajax" ======================
+/*
+ Сокращённая форма "ajax"
+ url - фдрес сервера
+ objSend - объект передаваемый на сервер
+ success - функция выполняемая в случае успеха
+ */
 function ajaxInquiry(url, objSend, success)
 {
     $.ajax({
@@ -167,6 +173,7 @@ function authorizationCheck(urlServer, urlPage) {
     Для страницы "people"
 */
 //Выводит на экран строки из выборки (для страницы "Люди")
+//data - выборка
 function addStrUserInfo (data)
 {
     var str;
