@@ -63,7 +63,7 @@
         if($essenceArr != false)
             if(count($essenceArr) != count($valueArr))
                 return false;
-
+        $base = new mysqli($settings['host'], $settings['user'], $settings['password'], $settings['database']);
         //С указанием имён доменов
         if($essenceArr != false)
         {
@@ -88,12 +88,10 @@
         //без указания имён доменов
         else
         {
-            $base = new mysqli($settings['host'], $settings['user'], $settings['password'], $settings['database']);
             $result = $base->query("SELECT COUNT(*) 
                                 FROM information_schema.COLUMNS 
                                 WHERE TABLE_NAME='".$table."'");
-            $base->close();
-            $cols = mysqli_fetch_array($result)[0]; //нашли количество столбцов таблицы
+            $cols = mysqli_fetch_array($result)[0]/2; //нашли количество столбцов таблицы
             $values ='(';
             $domains = '';
             for($i = 0; $i < count($valueArr); $i++)
